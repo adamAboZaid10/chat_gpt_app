@@ -1,4 +1,5 @@
 import 'package:chatgpt_app/features/ath_screen/ath_presentation/ath_views/widgets/custom_defualt_login_and_register_button.dart';
+import 'package:chatgpt_app/features/chat_screen/chat_presentation/chat_views/chat_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreenBody extends StatelessWidget {
@@ -31,7 +32,13 @@ class HomeScreenBody extends StatelessWidget {
                   textColor: Colors.white,
                   minWidth: double.infinity,
                   text: 'Start Chat',
-                  onPressed: (){}),
+                  onPressed: ()
+                  {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder:(context)=>const ChatScreen())
+                    );
+                  }),
               const SizedBox(height: 60,),
             ],
           ),
