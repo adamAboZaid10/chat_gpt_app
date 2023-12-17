@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
+// ignore: must_be_immutable
 class CustomSmoothPageIndicator extends StatelessWidget {
   CustomSmoothPageIndicator({required this.controller,super.key,required this.count});
   PageController controller;

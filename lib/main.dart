@@ -4,6 +4,9 @@ import 'package:chatgpt_app/features/onboarding_screen/peresentation/views/onboa
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import 'features/ath_screen/ath_presentation/login_manager/cubit/login_cubit.dart';
+
+
 void main() async{
    WidgetsFlutterBinding.ensureInitialized();
    await CacheHelper.init();
@@ -17,6 +20,7 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (context)=> OnboardingCubit()),
+        BlocProvider(create: (context)=> LoginCubit()),
 
       ],
       child: MaterialApp(

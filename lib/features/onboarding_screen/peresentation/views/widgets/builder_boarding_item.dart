@@ -1,10 +1,7 @@
-// ignore: must_be_immutable
-
-
 import 'package:flutter/material.dart';
-
 import '../../../data/onboarding_screen_model.dart';
 
+// ignore: must_be_immutable
 class BuilderBoardingItem extends StatelessWidget {
   BuilderBoardingItem({required this.model,super.key});
   BoardingModel model;
@@ -31,7 +28,6 @@ class BuilderBoardingItem extends StatelessWidget {
           model.body,
           style: const TextStyle(
             fontSize: 15,
-            fontWeight: FontWeight.bold,
           ),
         ),
       ],
