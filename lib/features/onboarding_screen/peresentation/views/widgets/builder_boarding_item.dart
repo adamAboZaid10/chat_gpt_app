@@ -18,17 +18,12 @@ class BuilderBoardingItem extends StatelessWidget {
         const SizedBox(height: 15,),
         Text(
           model.title,
-          style:const TextStyle(
-            fontSize: 25,
-            fontWeight: FontWeight.bold,
-          ),
+          style: Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 25),
         ),
         const SizedBox(height: 15,),
         Text(
           model.body,
-          style: const TextStyle(
-            fontSize: 15,
-          ),
+          style: Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 15),
         ),
       ],
     );

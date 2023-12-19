@@ -15,12 +15,12 @@ class HomeScreenBody extends StatelessWidget {
             children:
             [
               const SizedBox(height: 60,),
-              const Center(
+               Center(
                 child: Text(
                     'Welcome to Chat bot AI',
-                  style:TextStyle(fontWeight: FontWeight.w500,fontSize: 36),
+                  style:Theme.of(context)
+                      .textTheme.bodyText1!.copyWith(fontSize: 36,fontWeight: FontWeight.w500),),
                 ),
-          ),
               const SizedBox(height: 10,),
               Image.asset(
                 'assets/images/image_chat_bot.png',
@@ -42,8 +42,7 @@ class HomeScreenBody extends StatelessWidget {
               const SizedBox(height: 60,),
             ],
           ),
-        ),
-      ),
+        ),)
     );
   }
 }

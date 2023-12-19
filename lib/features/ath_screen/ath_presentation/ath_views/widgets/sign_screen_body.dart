@@ -37,13 +37,9 @@ class SignScreenBody extends StatelessWidget {
                         text: 'Hello there',
                         signOrLogin: 'Please enter you email & password to create an account '),
                     const SizedBox(height: 60,),
-                    const Text(
+                     Text(
                       'Create Email',
-                      style: TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w600,
-
-                      ),
+                      style:Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 14)
                     ),
                     const SizedBox(height: 5,),
                     DefaultFormField(
@@ -62,13 +58,9 @@ class SignScreenBody extends StatelessWidget {
                       suffix: Icons.email,
                     ),
                     const SizedBox(height: 50,),
-                    const Text(
+                     Text(
                       'Create Password',
-                      style: TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w600,
-
-                      ),
+                      style: Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 14),
                     ),
                     const SizedBox(height: 5,),
                     DefaultFormField(

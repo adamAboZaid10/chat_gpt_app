@@ -23,7 +23,7 @@ class CustomDropDownButtonWidget extends StatelessWidget {
             )),
             iconSize: 24,
             elevation: 16,
-            style: const TextStyle(color: Colors.black),
+            style: const TextStyle(color: Colors.pink),
             underline: Container(
               height: 2,
               color: Colors.grey.shade400,

@@ -35,11 +35,14 @@ class DefaultFormField extends StatelessWidget {
       obscureText: obscure,
       decoration: InputDecoration(
         hintText: hintText,
+        hintStyle: Theme.of(context).textTheme.bodyText1!.copyWith(
+            fontSize: 10,fontWeight: FontWeight.bold),
         suffixIcon: suffix != null
             ? IconButton(
           onPressed: suffixPressed,
           icon: Icon(
             suffix,
+            color: Theme.of(context).iconTheme.color,
           ),
         )
             : null,

@@ -1,6 +1,8 @@
 
 import 'package:flutter/material.dart';
 
+import '../../../../settings_screen/settings_presentation/settings_view/settings_screen.dart';
+
 class CustomAppBarChatScreen extends StatelessWidget {
   const CustomAppBarChatScreen({super.key});
 
@@ -17,18 +19,25 @@ class CustomAppBarChatScreen extends StatelessWidget {
               {
                 Navigator.pop(context);
               },
-              icon: const Icon(Icons.arrow_back_ios_new,color: Colors.black,)
+              icon:  Icon(
+                Icons.arrow_back_ios_new,
+                color: Theme.of(context).iconTheme.color,
+              ),
           ),
-          const Text(
+           Text(
             'ChatBot AI',
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.w500,
-            ),
+            style: Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 24,fontWeight: FontWeight.w500),
           ),
           IconButton(
-              onPressed: (){},
-              icon: const Icon(Icons.settings,color: Colors.black,)
+              onPressed: ()
+              {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder:(context)=>const SettingsScreen() ),
+                );
+              },
+              icon:  Icon(Icons.settings,color:Theme.of(context).iconTheme.color,)
           ),
         ],
       ),

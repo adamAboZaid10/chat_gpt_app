@@ -15,24 +15,16 @@ class CustomWelcomeTextWidgetSignInAndLogin extends StatelessWidget {
           children: [
             Text(
               text,
-              style: const TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w600,
-
-              ),
+              style:Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 20)
             ),
-            SizedBox(width: 6,),
-            Icon(Icons.waving_hand_rounded,color: Colors.yellow,),
+            const SizedBox(width: 6,),
+            const Icon(Icons.waving_hand_rounded,color: Colors.yellow,),
           ],
         ),
         const SizedBox(height: 29,),
         Text(
           signOrLogin,
-          style:const  TextStyle(
-            fontSize: 14,
-            fontWeight: FontWeight.w400,
-
-          ),
+          style:Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 14)
         ),
       ],
     );

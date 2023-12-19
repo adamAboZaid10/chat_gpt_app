@@ -12,7 +12,7 @@ class CustomHaveAccountOrNow extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children:
       [
-        Text(text,),
+        Text(text,style: Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 14,fontWeight: FontWeight.normal),),
         const SizedBox(width: 10,),
         TextButton(
             onPressed: onPressed,

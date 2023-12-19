@@ -13,9 +13,9 @@ class CustomOrSignWith extends StatelessWidget {
           children:
           [
             Expanded(child: Divider(thickness: 1,color: Colors.grey.shade300,)),
-            const Padding(
+             Padding(
               padding:  EdgeInsets.symmetric(horizontal: 8.0),
-              child:  Text('or continue with'),
+              child:  Text('or continue with',style: Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 14,fontWeight: FontWeight.normal),),
             ),
             Expanded(child: Divider(thickness: 1,color: Colors.grey.shade300,)),
 

@@ -23,7 +23,7 @@ class CustomCheckBox extends StatelessWidget {
               cubit.checkedBox(value);
             }),
             const SizedBox(width: 11,),
-            Expanded(child: Text(text)),
+            Expanded(child: Text(text,style: Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 14,fontWeight: FontWeight.normal),)),
           ],
         );
       },

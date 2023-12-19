@@ -34,17 +34,14 @@ var phoneController = TextEditingController();
                   children:
                   [
                     const SizedBox(height: 50,),
-                    const Text(
+                     Text(
                       'Complete your profile',
-                      style: TextStyle(fontWeight: FontWeight.w600,
-                          fontSize: 20),),
+                      style: Theme.of(context)
+                          .textTheme.bodyText1!.copyWith(fontSize: 20,fontWeight: FontWeight.w600),),
                     const SizedBox(height: 20,),
-                    const Text(
+                     Text(
                       'Please enter your details to complete your profile, don’t worry your details are private. ',
-                      style: TextStyle(
-                        fontWeight: FontWeight.w400,
-                        fontSize: 14,
-                      ),),
+                      style:Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 14,fontWeight: FontWeight.w400) ,),
                     const SizedBox(height: 30,),
                     Center(
                       child: Stack(
@@ -94,7 +91,8 @@ var phoneController = TextEditingController();
                       ),
                     ),
                     const SizedBox(height: 50,),
-                    const Text('Full Name',style: TextStyle(fontSize: 14,fontWeight: FontWeight.w600),),
+                     Text('Full Name',style: Theme.of(context)
+                         .textTheme.bodyText1!.copyWith(fontSize: 14,fontWeight: FontWeight.w600),),
                     const SizedBox(height: 5,),
                     DefaultFormField(
                         controller: nameController,
@@ -111,8 +109,9 @@ var phoneController = TextEditingController();
                         obscure: false,
                     ),
                     const SizedBox(height: 40,),
-                    const Text(
-                      'Phone Number',style: TextStyle(fontSize: 14,fontWeight: FontWeight.w600),),
+                     Text(
+                      'Phone Number',style: Theme.of(context)
+                         .textTheme.bodyText1!.copyWith(fontSize: 14,fontWeight: FontWeight.w600),),
                     const SizedBox(height: 5,),
                     DefaultFormField(
                         controller: phoneController,
@@ -130,8 +129,9 @@ var phoneController = TextEditingController();
                         obscure: false,
                     ),
                     const SizedBox(height: 40,),
-                    const Text(
-                      'Gender',style: TextStyle(fontSize: 14,fontWeight: FontWeight.w600),),
+                     Text(
+                      'Gender',style: Theme.of(context)
+                         .textTheme.bodyText1!.copyWith(fontSize: 14,fontWeight: FontWeight.w600),),
                     const SizedBox(height: 5,),
                     const CustomDropDownButtonWidget(),
                     const SizedBox(height: 60,),
@@ -166,6 +166,7 @@ var phoneController = TextEditingController();
                         ),
                       ],
                     ),
+                    const SizedBox(height: 40,)
                   ],
                 ),
               ),

@@ -40,13 +40,9 @@ class LoginScreenBody extends StatelessWidget {
                         text: 'Welcome back',
                         signOrLogin: 'Please enter your email & and password to sign in'),
                     const SizedBox(height: 60,),
-                    const Text(
+                     Text(
                       'Email',
-                      style: TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w600,
-
-                      ),
+                      style: Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 14)
                     ),
                     const SizedBox(height: 5,),
                     DefaultFormField(
@@ -65,13 +61,9 @@ class LoginScreenBody extends StatelessWidget {
                       suffix: Icons.email,
                     ),
                     const SizedBox(height: 50,),
-                    const Text(
+                     Text(
                       'Password',
-                      style: TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w600,
-
-                      ),
+                      style: Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 14),
                     ),
                     const SizedBox(height: 5,),
                     DefaultFormField(
@@ -116,9 +108,9 @@ class LoginScreenBody extends StatelessWidget {
                     Center(
                       child: TextButton(
                           onPressed: (){},
-                          child: const Text(
+                          child:  Text(
                               'Forget password?',
-                            style: TextStyle(color: Colors.black),
+                            style: Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 14),
                           ),
                       ),
                     ),
