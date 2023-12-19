@@ -1,5 +1,6 @@
 
 
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -23,9 +24,9 @@ class ShowDialogImage extends StatelessWidget {
               ),
               content: Column(
                 children: [
-                  const Text(
-                    'Please choose an option',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                   Text(
+                    'Please choose an option'.tr(),
+                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                   ),
                   const SizedBox(
                     height: 5,
@@ -49,7 +50,7 @@ class ShowDialogImage extends StatelessWidget {
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 8.0),
-                          child: Text(' Camera',
+                          child: Text(' Camera'.tr(),
                               style: TextStyle(
                                 color: Colors.pink.shade700,
                                 fontSize: 20,
@@ -72,7 +73,7 @@ class ShowDialogImage extends StatelessWidget {
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 8.0),
-                          child: Text(' Gallery',
+                          child: Text(' Gallery'.tr(),
                               style: TextStyle(
                                 color: Colors.pink.shade700,
                                 fontSize: 20,

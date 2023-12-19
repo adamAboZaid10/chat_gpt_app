@@ -1,5 +1,6 @@
 
 
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 class CustomListViewForAllItems extends StatelessWidget {
@@ -18,9 +19,9 @@ class CustomListViewForAllItems extends StatelessWidget {
           ),
           width: MediaQuery.of(context).size.width,
           height: 40,
-          child: const Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Text('hi'),
+          child:  Padding(
+            padding:const EdgeInsets.all(8.0),
+            child: Text('hi'.tr()),
           ),
         );
       },

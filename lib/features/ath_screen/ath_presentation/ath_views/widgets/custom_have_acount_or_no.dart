@@ -1,5 +1,6 @@
 
 
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 class CustomHaveAccountOrNow extends StatelessWidget {
@@ -16,8 +17,8 @@ class CustomHaveAccountOrNow extends StatelessWidget {
         const SizedBox(width: 10,),
         TextButton(
             onPressed: onPressed,
-            child: const Text(
-                'Sign Now'
+            child:  Text(
+                'Sign Now'.tr()
             )
         ),
       ],

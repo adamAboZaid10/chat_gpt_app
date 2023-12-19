@@ -1,6 +1,7 @@
 
 import 'package:chatgpt_app/core/utils/default_text_form_field.dart';
 import 'package:chatgpt_app/features/home_screen/home_peresentation/home_views/home_screen.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -37,11 +38,11 @@ class LoginScreenBody extends StatelessWidget {
                   children:
                   [
                     CustomWelcomeTextWidgetSignInAndLogin(
-                        text: 'Welcome back',
-                        signOrLogin: 'Please enter your email & and password to sign in'),
+                        text: 'Welcome back'.tr(),
+                        signOrLogin: 'Please enter your email & and password to sign in'.tr()),
                     const SizedBox(height: 60,),
                      Text(
-                      'Email',
+                      'Email'.tr(),
                       style: Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 14)
                     ),
                     const SizedBox(height: 5,),
@@ -53,16 +54,16 @@ class LoginScreenBody extends StatelessWidget {
                         {
                           if(value!.isEmpty)
                           {
-                            return 'email must not be empty';
+                            return 'email must not be empty'.tr();
                           }
                           return null;
                         },
-                        hintText: 'Email',
+                        hintText: 'Email'.tr(),
                       suffix: Icons.email,
                     ),
                     const SizedBox(height: 50,),
                      Text(
-                      'Password',
+                      'Password'.tr(),
                       style: Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 14),
                     ),
                     const SizedBox(height: 5,),
@@ -74,11 +75,11 @@ class LoginScreenBody extends StatelessWidget {
                       {
                         if(value!.isEmpty)
                         {
-                          return 'password must not be empty';
+                          return 'password must not be empty'.tr();
                         }
                         return null;
                       },
-                      hintText: 'password',
+                      hintText: 'Password'.tr(),
                       suffixPressed: ()
                       {
                           cubit.changePasswordVisibility();
@@ -87,10 +88,10 @@ class LoginScreenBody extends StatelessWidget {
                       suffix:cubit.suffix,
                     ),
                     const SizedBox(height: 10,),
-                     CustomCheckBox(text: 'Remember me',),
+                     CustomCheckBox(text: 'Remember me'.tr(),),
                     const SizedBox(height: 30,),
                     CustomLoginButton(
-                        text: 'Login',
+                        text: 'Login'.tr(),
                         textColor: Colors.white,
                         color: Colors.blueAccent,
                         minWidth: double.infinity,
@@ -109,13 +110,13 @@ class LoginScreenBody extends StatelessWidget {
                       child: TextButton(
                           onPressed: (){},
                           child:  Text(
-                              'Forget password?',
+                              'Forget password?'.tr(),
                             style: Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 14),
                           ),
                       ),
                     ),
                     const SizedBox(height: 10,),
-                    CustomHaveAccountOrNow(text: 'Don’t have an account?',
+                    CustomHaveAccountOrNow(text: 'Don’t have an account?'.tr(),
                         onPressed: ()
                         {
                           Navigator.push(

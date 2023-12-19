@@ -1,4 +1,5 @@
 import 'package:chatgpt_app/features/settings_screen/settings_presentation/settings_view/settings_widgets/settings_screen_body.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 class SettingsScreen extends StatelessWidget {
@@ -16,14 +17,14 @@ class SettingsScreen extends StatelessWidget {
           icon:const  Icon(Icons.arrow_back_ios_new),
         ),
         centerTitle: true,
-        title: const Text(
-            'Settings',
-          style: TextStyle(
+        title:  Text(
+            'Settings'.tr(),
+          style: const TextStyle(
             fontSize: 24
           ),
         ),
       ),
-      body: SettingsScreenBody(),
+      body: const SettingsScreenBody(),
     );
   }
 }

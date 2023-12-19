@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_other_register_body.dart';
@@ -14,8 +15,8 @@ class CustomOrSignWith extends StatelessWidget {
           [
             Expanded(child: Divider(thickness: 1,color: Colors.grey.shade300,)),
              Padding(
-              padding:  EdgeInsets.symmetric(horizontal: 8.0),
-              child:  Text('or continue with',style: Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 14,fontWeight: FontWeight.normal),),
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              child:  Text('or continue with'.tr(),style: Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 14,fontWeight: FontWeight.normal),),
             ),
             Expanded(child: Divider(thickness: 1,color: Colors.grey.shade300,)),
 

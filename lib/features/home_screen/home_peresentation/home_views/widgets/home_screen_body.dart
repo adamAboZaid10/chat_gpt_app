@@ -1,5 +1,6 @@
 import 'package:chatgpt_app/features/ath_screen/ath_presentation/ath_views/widgets/custom_defualt_login_and_register_button.dart';
 import 'package:chatgpt_app/features/chat_screen/chat_presentation/chat_views/chat_screen.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreenBody extends StatelessWidget {
@@ -17,7 +18,7 @@ class HomeScreenBody extends StatelessWidget {
               const SizedBox(height: 60,),
                Center(
                 child: Text(
-                    'Welcome to Chat bot AI',
+                    'Welcome to Chat bot AI'.tr(),
                   style:Theme.of(context)
                       .textTheme.bodyText1!.copyWith(fontSize: 36,fontWeight: FontWeight.w500),),
                 ),
@@ -31,7 +32,7 @@ class HomeScreenBody extends StatelessWidget {
                 color: Colors.black,
                   textColor: Colors.white,
                   minWidth: double.infinity,
-                  text: 'Start Chat',
+                  text: 'Start Chat'.tr(),
                   onPressed: ()
                   {
                     Navigator.push(

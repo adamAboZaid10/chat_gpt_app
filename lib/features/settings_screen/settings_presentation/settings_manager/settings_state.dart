@@ -8,3 +8,7 @@ class SettingsInitial extends SettingsState {}
 class ToggleSwitchSettings extends SettingsState {}
 
 class ChangeAppThemeState extends SettingsState {}
+
+class ChangeLanguageToEnglishState extends SettingsState {}
+
+class ChangeLanguageToArabicState extends SettingsState {}

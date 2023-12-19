@@ -1,4 +1,5 @@
 import 'package:chatgpt_app/features/onboarding_screen/peresentation/views/widgets/onboarding_screen_body.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import '../manager/cubit/onboarding_cubit.dart';
 
@@ -17,7 +18,7 @@ class OnboardingScreen extends StatelessWidget {
                 {
                   OnboardingCubit.get(context).submit(context: context);
                 },
-                child:const Text('SKIP')),
+                child: Text('SKIP'.tr())),
           ]
           ),
         body:  const OnboardingScreenBody()

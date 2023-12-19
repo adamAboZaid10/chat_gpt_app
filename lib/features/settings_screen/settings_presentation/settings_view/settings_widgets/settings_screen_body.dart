@@ -1,3 +1,5 @@
+import 'package:chatgpt_app/features/settings_screen/settings_presentation/settings_view/settings_widgets/show_dialog_change_language.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -34,9 +36,9 @@ class SettingsScreenBody extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children:
                       [
-                        const Text(
-                          'chat history & training',
-                          style:  TextStyle(fontSize: 20,fontWeight: FontWeight.w600),
+                         Text(
+                          'chat history & training'.tr(),
+                          style:  const TextStyle(fontSize: 20,fontWeight: FontWeight.w600),
                         ),
                         Switch(
                           value:cubit.light0,
@@ -51,33 +53,39 @@ class SettingsScreenBody extends StatelessWidget {
                   ),
                 ),
                 CustomContainerOfAllFeatureSettingsScreenWidget(
-                    title: 'shared links',
+                    title: 'shared links'.tr(),
                     onPressed: (){}, color: Colors.grey.shade400,
-                    settingsName: 'Manage'
+                    settingsName: 'Manage'.tr()
                 ),
                 CustomContainerOfAllFeatureSettingsScreenWidget(
-                    title: 'Export data',
-                    onPressed: (){},
+                    title: 'Change Language'.tr(),
+                    onPressed: ()
+                    {
+                      showDialog(
+                          context: context,
+                          builder: (context)=>const ShowDialogChangeLanguage(),
+                      );
+                    },
                     color: Colors.grey.shade400,
-                    settingsName: 'Export'
+                    settingsName: 'change'.tr()
                 ),
                 CustomContainerOfAllFeatureSettingsScreenWidget(
-                  title: 'Theme',
+                  title: 'Theme'.tr(),
                   onPressed: ()
                   {
                     cubit.changeThemeMode();
                   },
-                  settingsName: 'system',
+                  settingsName: 'system'.tr(),
                   color: Colors.grey.shade400,
               ),
                 CustomContainerOfAllFeatureSettingsScreenWidget(
-                    title: 'clear data',
+                    title: 'clear data'.tr(),
                     onPressed: (){},
-                    settingsName: 'clear',
+                    settingsName: 'clear'.tr(),
                   color: Colors.red,
                 ),
                 CustomContainerOfAllFeatureSettingsScreenWidget(
-                    title: 'Delete account',
+                    title: 'Delete account'.tr(),
                     onPressed: ()
                     {
                       Navigator.push(
@@ -85,7 +93,7 @@ class SettingsScreenBody extends StatelessWidget {
                         MaterialPageRoute(builder: (context)=>const SignScreen())
                       );
                     },
-                    settingsName: 'Delete',
+                    settingsName: 'Delete'.tr(),
                   color: Colors.red,
                 ),
                 const SizedBox(height: 50,),
@@ -98,3 +106,6 @@ class SettingsScreenBody extends StatelessWidget {
     );
   }
 }
+
+
+

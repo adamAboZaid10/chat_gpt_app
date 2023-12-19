@@ -1,4 +1,5 @@
 
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/default_text_form_field.dart';
@@ -22,7 +23,7 @@ class CustomEnterTextAndSendWidget extends StatelessWidget {
               validator: (value){
                 return null;
               },
-              hintText: 'Hello! there',
+              hintText: 'Hello there'.tr(),
               obscure: false,
             ),
           ),

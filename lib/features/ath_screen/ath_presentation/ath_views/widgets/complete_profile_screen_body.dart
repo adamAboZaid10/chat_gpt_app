@@ -7,6 +7,7 @@ import 'package:chatgpt_app/features/ath_screen/ath_presentation/ath_views/widge
 import 'package:chatgpt_app/features/ath_screen/ath_presentation/login_manager/cubit/login_cubit.dart';
 import 'package:chatgpt_app/features/ath_screen/ath_presentation/login_manager/cubit/login_states.dart';
 import 'package:chatgpt_app/features/home_screen/home_peresentation/home_views/home_screen.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -35,12 +36,12 @@ var phoneController = TextEditingController();
                   [
                     const SizedBox(height: 50,),
                      Text(
-                      'Complete your profile',
+                      'Complete your profile'.tr(),
                       style: Theme.of(context)
                           .textTheme.bodyText1!.copyWith(fontSize: 20,fontWeight: FontWeight.w600),),
                     const SizedBox(height: 20,),
                      Text(
-                      'Please enter your details to complete your profile, don’t worry your details are private. ',
+                      'Please enter your details to complete your profile, don’t worry your details are private.'.tr(),
                       style:Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 14,fontWeight: FontWeight.w400) ,),
                     const SizedBox(height: 30,),
                     Center(
@@ -91,7 +92,7 @@ var phoneController = TextEditingController();
                       ),
                     ),
                     const SizedBox(height: 50,),
-                     Text('Full Name',style: Theme.of(context)
+                     Text('Full Name'.tr(),style: Theme.of(context)
                          .textTheme.bodyText1!.copyWith(fontSize: 14,fontWeight: FontWeight.w600),),
                     const SizedBox(height: 5,),
                     DefaultFormField(
@@ -101,16 +102,16 @@ var phoneController = TextEditingController();
                         {
                           if(value!.isEmpty)
                           {
-                            return 'name must not be empty';
+                            return 'name must not be empty'.tr();
                           }
                           return null;
                         },
-                        hintText: 'Adam Mohamed',
+                        hintText: 'Adam Mohamed'.tr(),
                         obscure: false,
                     ),
                     const SizedBox(height: 40,),
                      Text(
-                      'Phone Number',style: Theme.of(context)
+                      'Phone Number'.tr(),style: Theme.of(context)
                          .textTheme.bodyText1!.copyWith(fontSize: 14,fontWeight: FontWeight.w600),),
                     const SizedBox(height: 5,),
                     DefaultFormField(
@@ -121,7 +122,7 @@ var phoneController = TextEditingController();
                         {
                           if(value!.isEmpty)
                           {
-                            return 'phone must not be empty';
+                            return 'phone must not be empty'.tr();
                           }
                           return null;
                         },
@@ -130,7 +131,7 @@ var phoneController = TextEditingController();
                     ),
                     const SizedBox(height: 40,),
                      Text(
-                      'Gender',style: Theme.of(context)
+                      'Gender'.tr(),style: Theme.of(context)
                          .textTheme.bodyText1!.copyWith(fontSize: 14,fontWeight: FontWeight.w600),),
                     const SizedBox(height: 5,),
                     const CustomDropDownButtonWidget(),
@@ -140,7 +141,7 @@ var phoneController = TextEditingController();
                       children:
                       [
                         CustomLoginButton(
-                            text: 'Skip',
+                            text: 'Skip'.tr(),
                             textColor: Colors.black,
                             onPressed: ()
                             {
@@ -152,7 +153,7 @@ var phoneController = TextEditingController();
                           minWidth: 50,
                         ),
                         CustomLoginButton(
-                            text: 'Sign Up',
+                            text: 'Sign up'.tr(),
                             onPressed: ()
                             {
                               if(formKey.currentState!.validate())
