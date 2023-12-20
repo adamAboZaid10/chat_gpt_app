@@ -2,6 +2,7 @@ import 'package:chatgpt_app/features/ath_screen/ath_presentation/ath_views/widge
 import 'package:chatgpt_app/features/chat_screen/chat_presentation/chat_views/chat_screen.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class HomeScreenBody extends StatelessWidget {
   const HomeScreenBody({super.key});
@@ -23,8 +24,8 @@ class HomeScreenBody extends StatelessWidget {
                       .textTheme.bodyText1!.copyWith(fontSize: 36,fontWeight: FontWeight.w500),),
                 ),
               const SizedBox(height: 10,),
-              Image.asset(
-                'assets/images/image_chat_bot.png',
+              Lottie.asset(
+                'assets/images/home_animation.json',
                 width:MediaQuery.of(context).size.width ,
                 height: MediaQuery.of(context).size.height*.5 ,),
               const SizedBox(height: 10,),

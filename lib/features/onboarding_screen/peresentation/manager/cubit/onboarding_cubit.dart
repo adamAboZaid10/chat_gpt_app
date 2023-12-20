@@ -36,19 +36,19 @@ import '../../../../ath_screen/ath_presentation/ath_views/login_screen.dart';
 
     List<BoardingModel> boarding = [
     BoardingModel(
-        image: 'assets/images/one.png',
+        image: 'assets/images/one_animation.json',
         bottomImage: 'assets/images/bottum_image.png',
         title: 'Introduction to Chatbot_AI'.tr(),
         body: 'Meet Chatbot, your personal AI language model & discover the benefits of using Chatbot_AI for language tasks'.tr(),
     ),
     BoardingModel(
-        image: 'assets/images/two.png',
+        image: 'assets/images/two_animation.json',
         bottomImage: 'assets/images/bottum_image.png',
         title: 'Explore categories of all topics'.tr(),
         body: 'Ask question to chatbot_AI with help of different categories and get answer that you want.'.tr(),
     ),
     BoardingModel(
-        image: 'assets/images/third.png',
+        image: 'assets/images/third_animation.json',
         bottomImage: 'assets/images/bottum_image.png',
         title: 'Getting started with chatbot_AI'.tr(),
         body: 'Try out different language tasks and modes.'.tr(),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import '../../../data/onboarding_screen_model.dart';
 
 // ignore: must_be_immutable
@@ -12,8 +13,10 @@ class BuilderBoardingItem extends StatelessWidget {
       children:
       [
         Expanded(
-            child: Center(child: Image(image: AssetImage(model.image)))),
-        const SizedBox(height: 30,),
+            child: Center(
+                child: Lottie.asset(model.image),
+            )),
+        const SizedBox(height: 10,),
         Center(child: Image(image: AssetImage(model.bottomImage))),
         const SizedBox(height: 15,),
         Text(
